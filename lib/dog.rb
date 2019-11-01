@@ -8,7 +8,21 @@ class Dog
   
   def initialize(name)
     @name = name
-    @@all << self
+    save
+  end
+  
+  def self.all
+    @@all 
+  end
+  
+  def self.print_all
+    @@all.each do |index|
+      puts @@all[index]
+    end
+  end
+  
+  def save
+    @@all << self 
   end
   
 end
