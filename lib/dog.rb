@@ -17,16 +17,12 @@ class Dog
   
   def self.print_all
     @@all.each do |index|
-      puts @@all[index].names
+      puts @@all[index].name
     end
   end
   
   def save
     @@all << self 
-  end
-  
-  def self.names
-    puts @name
   end
   
   def self.clear_all
