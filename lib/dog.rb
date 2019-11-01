@@ -12,12 +12,12 @@ class Dog
   end
   
   def self.all
-    @@all 
+    @@all
   end
   
   def self.print_all
-    @@all.each do |index|
-      puts @@all[index].name
+    @@all.each_with_index do |value, index|
+      puts value[index].name
     end
   end
   
